@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --cream:         #F7F0E6;
+  --cream-card:    #FFFCF8;
+  --cream-border:  #E8DDD0;
+  --sage:          #3D562F;
+  --sage-light:    #D6E8D2;
+  --rose:          #640010;
+  --rose-light:    #F5D8D4;
+  --charcoal:      #2C2216;
+  --warm-gray:     #8B7D6B;
+  --ink:           #1A1008;
+  --white:         #FFFFFF;
+}
+
+@theme inline {
+  --font-mynerve: var(--font-mynerve);
+  --font-sans: var(--font-dm-sans);
+}
+
+body {
+  background-color: var(--white);
+  color: var(--charcoal);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-mynerve), cursive;
+}

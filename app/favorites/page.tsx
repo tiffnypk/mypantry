@@ -15,10 +15,12 @@ export default function FavoritesPage() {
 
   return (
     <div
-      className="relative min-h-screen flex flex-col items-center px-4 py-50"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 py-50"
       style={{
         backgroundColor: 'var(--rose)',
-        justifyContent: favorites.length > 0 ? 'flex-start' : 'center',
+        justifyContent: favorites.length > 0 ? 'center' : 'center',
+        padding: favorites.length > 0 ? '40px' : '0',
+
       }}
     >
       <div
@@ -39,7 +41,7 @@ export default function FavoritesPage() {
         </Link>
 
         {favorites.length === 0 ? (
-          <div className="rounded-2xl p-10 flex flex-col items-center text-center gap-4" style={cardStyle}>
+          <div className="rounded-2xl p-20 flex flex-col items-center text-center gap-4" style={cardStyle}>
             <h2
               className="text-lg font-semibold tracking-widest"
               style={{ color: 'var(--charcoal)' }}

@@ -25,7 +25,7 @@ export default function HomePage() {
       className="relative min-h-screen flex flex-col items-center px-4 overflow-x-hidden"
       style={{
         backgroundColor: 'var(--rose)',
-        paddingTop: hasResults ? '3rem' : undefined,
+        paddingTop: hasResults ? '3rem' : '3rem',
         paddingBottom: '3rem',
         justifyContent: hasResults ? 'flex-start' : 'center',
       }}
